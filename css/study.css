@@ -1,0 +1,387 @@
+@font-face {
+    font-family: 'Acosta Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acosta Regular'), url('../fonts/Acosta.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+head, body{
+    cursor: url('../img/cursor-bl.png'), auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+body{
+    background-color: #e9e9e9;
+}
+
+h1{
+    font-family:'Acosta Regular';
+    font-weight:normal;
+}
+
+h2,h3,h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    word-break: keep-all;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrap {
+    margin: 70px auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: auto;
+    position: relative;    
+}
+
+/* nav css */
+
+.nav{
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.nav .wrapper{
+    width: 450px;
+}
+
+.flex{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.nav a{
+    display: block;
+	padding: 13px 15px;
+}
+
+.nav .logo{
+    margin-left: 50px;
+}
+
+.nav .logo h1{
+    font-size:20px;
+}
+
+.nav .gnb{
+    width: 400px;
+    margin-right: 50px;
+}
+
+.nav .gnb .on{
+    background: #F5601B;
+	color: #000;
+}
+
+.nav .gnb li a{
+    padding: 9.5px 25.5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav .gnb li a:hover{
+    background: #F5601B;
+	color: #000;
+	transition: all 0.5s;  
+}
+
+/* page css */
+
+.tit {
+    width: 180px;
+    height: 60px;
+    background-color: #F5601B;
+    border: 1px solid #000;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.tit h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.info{
+    text-align: left;
+    margin-top: 25px;
+}
+
+.line {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.line-thick {
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+section{}
+section .classes{}
+section .classes .info-box{
+    width: 180px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+section #highlight{
+    color:#F5601B;
+    font-weight: 700;
+    width: 120px;
+}
+
+section #num{
+    font-weight: 700;
+    width: 150px;
+}
+
+.classes .croquis{
+    display: flex; 
+    justify-content: left; 
+    align-items: flex-start;
+}
+.classes .wrapper{
+    width: 250px;
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+}
+
+.classes .img-box-padding{
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: #000;
+}
+
+.classes .croquis h2{}
+.classes .croquis h3{}
+.classes .croquis .exp .info-box{
+    width: 800px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.classes .croquis .exp .info-box h3{}
+.classes .croquis .exp .img-box{
+    width: 70vw;
+    height: 370px;
+    background-color: #000;
+    overflow-x: auto;
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.classes .croquis .exp .img-box img{
+    height: 350px;
+    margin-right: 10px;
+}
+
+.img-box:hover{
+    cursor: url('../img/cursor-click.png'), auto;
+}
+
+.croquis .exp .img-box::-webkit-scrollbar {
+    height: 12px;
+}
+  
+.croquis .exp .img-box::-webkit-scrollbar-thumb {
+    background-color: #F5601B; /* 스크롤바 색상 */
+}
+  
+.croquis .exp .img-box::-webkit-scrollbar-track {
+    background-color: #000; /* 스크롤바 트랙 색상 */
+}
+
+.classes .croquis .exp .img-box img{}
+
+.classes .inten{
+    display: flex; 
+    justify-content: left; 
+    align-items: flex-start;
+}
+.classes .inten h2{}
+.classes .inten h3{}
+.classes .inten .exp{}
+.classes .inten .exp .info-box{
+    width: 750px;
+    height: 260px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+} 
+.classes .inten .exp .info-box h3{}
+.classes .inten .exp .img-box{
+    width: 70vw;
+    height: auto;
+    background-color: #000;
+    overflow-x: auto;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.classes .inten .exp .img-box ul{
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+}
+.classes .inten .exp .img-box ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: #fff;
+}
+.classes .inten .exp .img-box ul li > h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.classes .inten .exp .img-box img{
+    margin-right: 10px;
+}
+
+.inten .img-box::-webkit-scrollbar {
+    height: 12px;
+}
+  
+.inten .img-box::-webkit-scrollbar-thumb {
+    background-color: #F5601B; /* 스크롤바 색상 */
+}
+  
+.inten .img-box::-webkit-scrollbar-track {
+    background-color: #000; /* 스크롤바 트랙 색상 */
+}
+
+.weekly-event{
+    display: flex; 
+    justify-content: left; 
+    align-items: flex-start;
+}
+
+.weekly-event .wrapper{
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.weekly-event .event-info > .line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.weekly-event .event-info > .line-thick{
+    margin-top: 0;
+}
+
+.weekly-event .event-info h4{
+    font-weight: 100;
+}
+
+.weekly-event .event-info .img-ex{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    /* width: 1000px; */ width: 70vw;
+}
+
+.weekly-event .event-info .img-ex .info{
+    text-align: center;
+}
+.weekly-event .event-info .img-ex .info h3{
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.weekly-event .event-info .img-ex .info .arrow{
+    position: relative;
+}
+.weekly-event .event-info .img-ex .info .arrow::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid #F5601B;
+    margin-right: 5px; /* 세모와 텍스트 사이의 간격을 조정할 수 있습니다. */
+  }
+
+.weekly-event .event-info .img-ex .margin {
+    margin-right: 25px;
+}
+.weekly-event .event-info .img-ex{
+    width: 1100px;
+}
+
+.weekly-event .event-info .img-ex .ref img{
+    margin-right: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-wrapper{
+    width: 1200px;
+    text-align: center;
+}
+
+footer h3{
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+}
+
